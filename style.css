@@ -55,6 +55,7 @@ p {
   border: #444 solid 1px;
   flex: 300px;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .footer {
