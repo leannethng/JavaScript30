@@ -47,12 +47,14 @@ p {
   grid-area: project-grid;
   display: flex;
   flex-wrap: wrap;
+
   justify-content: flex-start;
 }
 
 .card {
-  width: 300px;
-  margin: 0 auto;
+  border: #444 solid 1px;
+  flex: 300px;
+  flex-flow: row wrap;
 }
 
 .footer {
