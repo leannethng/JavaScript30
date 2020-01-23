@@ -59,11 +59,10 @@ p {
 }
 
 .card {
-  padding: 0.5em;
   margin-bottom: 2%;
   flex: 0 0 100%;
   max-width: 100%;
-
+  overflow: hidden;
   /* height: 4rem; */
   text-align: center;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -73,8 +72,10 @@ p {
 }
 
 .portfolio-images {
-  width: 100%;
-  overflow: hidden;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 .card:hover img {
@@ -115,6 +116,9 @@ p {
     flex: 0 0 49%;
     max-width: 49%;
   }
+  .portfolio-images {
+    height: 300px;
+  }
 }
 
 /* Screen larger than 900px? 3 columns */
@@ -122,5 +126,9 @@ p {
   .card {
     flex: 0 0 32.3333%;
     max-width: 32.3333%;
+  }
+
+  .portfolio-images {
+    height: 200px;
   }
 }
